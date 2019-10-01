@@ -1,0 +1,10 @@
+///después de el elemento
+/* h1 + p {
+    background: #ddd;
+} */
+
+
+////inmediatamente después
+/* h1 ~ p {
+    background: #ddd;
+} */
