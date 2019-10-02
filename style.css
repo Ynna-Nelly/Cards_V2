@@ -7,7 +7,9 @@
 
 body > h1 {
     padding: 20px;
-    text-align: center;
+    /* text-align: center; */
+    display: inline;
+    clear: left;
 }
 
 body > div {
@@ -17,13 +19,43 @@ body > div {
     border-radius: 10px;
     margin: 10px;
     float: left;
+    position: relative;
+    display: inline-block;
 }
+
+
+body > div:hover {
+    background: rgba(160, 159, 159, 0.685);
+}
+
+/* body > div:first-of-type{
+    background: red;
+}  */
 
 div > img {
     width: 100%;
     border-radius: 10px;
 }
 
+body > h1 + p{
+    top: -200px;
+    left: 20px;
+}
+
 /* div > h1 {
 
 } */
+
+p {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    color: white;
+}
+
+h1 {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    color: white;
+}
